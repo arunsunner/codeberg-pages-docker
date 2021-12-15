@@ -1,7 +1,7 @@
 
 # codeberg-pages-docker
 
-Use Codeberg Pages on your own self-hosted Gitea instance using Docker.
+Run [Codeberg Pages](https://codeberg.org/codeberg/pages-server) in conjuction with your own self-hosted [Gitea](https://github.com/go-gitea/gitea) instance using Docker. Codeberg Pages is a Go application that serves the content of repos on a Gitea server over HTTPS and generates an SSL certificate for domains.
 
 ## Usage instructions
 

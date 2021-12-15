@@ -25,5 +25,6 @@ These can be set either in the Dockerfile or in whichever Docker client applicat
 | ACME_API | _The domain ACME requests for certificate renewals will be made_ | https://acme.mock.directory 
 | ACME_EMAIL | _The email address sent to the ACME provider during requests_ | noreply@example.email
 | ACME_USE_RATE_LIMITS | _Defines whether requests to the ACME server are rate-limited_ | true
-| DNS_PROVIDER | _The DNS provider used to validate requests for ACME certificates_ | _<not set\>_
+| DNS_PROVIDER | _The [DNS provider](https://go-acme.github.io/lego/dns/) used to validate requests for ACME certificates_ | _<not set\>_
 | ENABLE_HTTP_SERVER | _Enable HTTP requests (on port 80) to be made to the Pages server_ | true
+

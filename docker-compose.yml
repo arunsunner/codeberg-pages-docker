@@ -1,0 +1,21 @@
+version: '3.2'
+
+services:
+  codeberg-pages:
+    image: sunner/codeberg-pages:latest
+    container_name: codeberg-pages
+    restart: unless-stopped
+    cap_add:
+      - net_admin
+      - sys_module
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - PAGES_DOMAIN=pages.domain
+      - GITEA_ROOT=https://git.domain
+      - GITEA_API_TOKEN=
+      - RAW_DOMAIN=raw.pages.domain
+      - ACME_ACCEPT_TERMS=true
+      - ACME_API=https://acme.mock.directory
+      - ENABLE_HTTP_SERVER=false
